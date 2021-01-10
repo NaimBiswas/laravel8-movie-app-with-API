@@ -15,7 +15,7 @@ class MoviesController extends Controller
     public function index()
     {
         $popularMovies = Http::get('https://api.themoviedb.org/3/movie/popular?api_key=8a9121945fb215b83aac6b1896a8adfe');
-        return view('dashboard', compact('popularMovies'));
+        return view('welcome', compact('popularMovies'));
     }
 
     /**
