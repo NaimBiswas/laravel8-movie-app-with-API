@@ -30,9 +30,10 @@
                         <span class="ml-1">|</span>
                         <span class="ml-1">{{ \Carbon\Carbon::parse($pM['release_date'])->format('M d, Y')  }}</span>
                     </div>
-                    @foreach ($genreList as $gL)
+                    @foreach ($pM['genre_ids'] as $gL)
 
-                    <div class="text-gray-300">{{ $gL['genre_ids'] . ',' }}</div>
+                    <div class="text-gray-300"></div>
+
                     @endforeach
                 </div>
             </div>
