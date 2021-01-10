@@ -13,7 +13,7 @@
                 <div class="mt-2">
                     <a href="#"
                         class="text-lg mt-2 hover:text-gray-300"> Wonder Women 1984 </a>
-                    <div class="flex item-center text-gray-400 mt-1">
+                    <div class="flex item-center text-gray-400 mt-1 text-sm">
                         <span class="ml-1 mt-1">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 height="13pt"
@@ -24,9 +24,9 @@
                                     fill="#ffc107" />
                             </svg>
                         </span>
-                        <span class="ml-1">95% </span>
-                        <span class="ml-1"> | </span>
-                        <span class="ml-1"> Dec 20, 2020</span>
+                        <span class="ml-1">95%</span>
+                        <span class="ml-1">|</span>
+                        <span class="ml-1">Dec 20, 2020</span>
                     </div>
                     <div class="text-gray-300">Fantasy, Action, Adventure</div>
                 </div>
