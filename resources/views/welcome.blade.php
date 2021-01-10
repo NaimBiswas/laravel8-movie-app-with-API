@@ -3,7 +3,7 @@
 <div class="container mx-auto px-4 pt-16">
     <div class="popular-movies">
         <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold popular-movie">Popular Movies</h2>
-        <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12">
+        <div class="grid xs:grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12">
             <div class="mt-8">
                 <a href="#">
                     <img src="{{ asset('img/images1.png') }}"
