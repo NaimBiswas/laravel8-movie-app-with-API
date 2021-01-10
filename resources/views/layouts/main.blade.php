@@ -15,8 +15,8 @@
 
     <body class="font-sans bg-gray-900 text-white ">
         <header class="border-b border-gray-800">
-            <div class="container ">
-                <nav class="items-center justify-between px-4 py-4 flex">
+            <div class="">
+                <nav class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-6">
                     <ul class="flex items-center ">
                         <li>
                             <a href="#">
