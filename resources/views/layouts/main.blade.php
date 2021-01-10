@@ -36,8 +36,15 @@
                     <ul class="flex items-center">
                         <li class="reletive">
                             <input type="text"
-                                class="bg-gray-800 rounded-full w-64 px-4 py-1 "
+                                class="bg-gray-800 rounded-full w-64 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline"
                                 placeholder="Search...">
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="rounded-full"
+                                    src="{{ asset('user/images/user.png') }}"
+                                    alt="User Avatar">
+                            </a>
                         </li>
 
                     </ul>
