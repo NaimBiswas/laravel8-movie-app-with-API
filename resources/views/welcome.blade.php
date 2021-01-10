@@ -8,15 +8,15 @@
             @foreach ($popularMovies as $pM)
             <div class="mt-8">
                 <a href="#">
-                    <img src="{{ asset('img/images1.png') }}"
+                    <img src="{{ "https://image.tmdb.org/t/p/w500/".$pM['poster_path'] }}"
                         alt="Move Poster"
                         class="hover:opacity-75 transition ease-in-out">
                 </a>
                 <div class="mt-2">
                     <a href="#"
-                        class="text-lg mt-2 hover:text-gray-300"> Wonder Women 1984 </a>
+                        class="text-lg mt-2 hover:text-gray-300"> {{ $pM['title'] }} </a>
                     <div class="flex item-center text-gray-400 mt-1 text-sm">
-                        <span class="ml-1 mt-1">
+                        <span class="ml-1 mt-0">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 height="13pt"
                                 viewBox="0 -10 511.98685 511"
@@ -26,9 +26,9 @@
                                     fill="#ffc107" />
                             </svg>
                         </span>
-                        <span class="ml-1">95%</span>
+                        <span class="ml-1">{{ $pM['vote_average' ]* 10 . '%' }}</span>
                         <span class="ml-1">|</span>
-                        <span class="ml-1">Dec 20, 2020</span>
+                        <span class="ml-1">{{ \Carbon\Carbon::parse($pM['release_date'])->format('M d, Y')  }}</span>
                     </div>
                     <div class="text-gray-300">Fantasy, Action, Adventure</div>
                 </div>
