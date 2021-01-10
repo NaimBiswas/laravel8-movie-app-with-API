@@ -29,17 +29,17 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="xs:mt-2 sm:mt-2 md:ml-16 hover:text-gray-300"><a href="#">Movies</a></li>
-                        <li class="xs:mt-2 sm:mt-2 md:ml-6 hover:text-gray-300"><a href="#">TV Shows</a></li>
-                        <li class="xs:mt-2 sm:mt-2 md:ml-6 hover:text-gray-300"><a href="#">Actors</a></li>
+                        <li class="md:ml-16 mt-3 md:mt-0 hover:text-gray-300"><a href="#">Movies</a></li>
+                        <li class=" md:ml-16 mt-3 md:mt-0 hover:text-gray-300"><a href="#">TV Shows</a></li>
+                        <li class="md:ml-16 mt-3 md:mt-0 hover:text-gray-300"><a href="#">Actors</a></li>
                     </ul>
                     <ul class="flex flex-col md:flex-row items-center">
-                        <li class="reletive">
+                        <li class="reletive mt-2">
                             <input type="text"
                                 class="bg-gray-800 rounded-full w-64 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline"
                                 placeholder="Search...">
                         </li>
-                        <li>
+                        <li class="mt-2">
                             <a href="">
                                 <img class="rounded-full ml-4"
                                     src="{{ asset('user/images/user.png') }}"
