@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MoviesController;
 use Facade\FlareClient\View;
 use Illuminate\Support\Facades\Route;
 
