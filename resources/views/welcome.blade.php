@@ -13,7 +13,7 @@
                 <div class="mt-2">
                     <a href="#"
                         class="text-lg mt-2 hover:text-gray-300"> Wonder Women 1984 </a>
-                    <div class="flex item-center text-gray-400">
+                    <div class="flex item-center text-gray-400 mt-1">
                         <span class="ml-1 mt-1">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 height="13pt"
