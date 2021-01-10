@@ -41,7 +41,7 @@
                         </li>
                         <li>
                             <a href="">
-                                <img class="rounded-full"
+                                <img class="rounded-full ml-4"
                                     src="{{ asset('user/images/user.png') }}"
                                     alt="User Avatar">
                             </a>
