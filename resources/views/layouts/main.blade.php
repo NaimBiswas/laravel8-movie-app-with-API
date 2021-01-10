@@ -14,9 +14,9 @@
     </head>
 
     <body class="font-sans bg-gray-900 text-white ">
-        <header>
+        <header class="border-b border-gray-800">
             <div class="container ">
-                <nav class="border-b border-gray-800 items-center justify-between px-4 py-4 flex">
+                <nav class="items-center justify-between px-4 py-4 flex">
                     <ul class="flex items-center ">
                         <li>
                             <a href="#">
