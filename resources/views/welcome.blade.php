@@ -32,9 +32,10 @@
                     </div>
                     @foreach ($pM['genre_ids'] as $gL)
                     @foreach ($genreList as $GL)
+
                     @if ($gL === $GL['id'])
 
-                    <span class="text-gray-300">{{ $GL['name'] . ',' }}</span>
+                    <span class="text-gray-300">{{ $GL['name'] }},</span>
 
                     @endif
                     @endforeach
