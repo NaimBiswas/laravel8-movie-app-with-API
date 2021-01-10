@@ -24,3 +24,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::get('details', function () {
     return view('details');
 })->name('details');
+
+Route::get('/', [MoviesController::class, 'index'])->name('movie');
+Route::get('/movie/{movie}', [MoviesController::class, 'show'])->name('movie.show');
