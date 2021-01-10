@@ -17,7 +17,7 @@
         <header class="border-b border-gray-800">
             <div class="">
                 <nav class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-6">
-                    <ul class="flex items-center ">
+                    <ul class="flex flex-col md:flex-row items-center">
                         <li>
                             <a href="#">
                                 <svg class="w-32"
@@ -29,11 +29,11 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="ml-16 hover:text-gray-300"><a href="#">Movies</a></li>
-                        <li class="ml-6 hover:text-gray-300"><a href="#">TV Shows</a></li>
-                        <li class="ml-6 hover:text-gray-300"><a href="#">Actors</a></li>
+                        <li class="xs:mt-2 sm:mt-2 md:ml-16 hover:text-gray-300"><a href="#">Movies</a></li>
+                        <li class="xs:mt-2 sm:mt-2 md:ml-6 hover:text-gray-300"><a href="#">TV Shows</a></li>
+                        <li class="xs:mt-2 sm:mt-2 md:ml-6 hover:text-gray-300"><a href="#">Actors</a></li>
                     </ul>
-                    <ul class="flex items-center">
+                    <ul class="flex flex-col md:flex-row items-center">
                         <li class="reletive">
                             <input type="text"
                                 class="bg-gray-800 rounded-full w-64 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline"
