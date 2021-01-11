@@ -60,12 +60,13 @@ class MoviesController extends Controller
      */
     public function show($id)
     {
-        $movie = Http::get('https://api.themoviedb.org/3/movie/' . $id . '?api_key=8a9121945fb215b83aac6b1896a8adfe')
+        $movie = Http::get('https://api.themoviedb.org/3/movie/' . $id . '?api_key=8a9121945fb215b83aac6b1896a8adfe&append_to_response=credits,videos,images')
             ->json();
 
-        $movieCast = Http::get('https://api.themoviedb.org/3/movie/' . $id . '/credits?api_key=8a9121945fb215b83aac6b1896a8adfe')
-            ->json()['cast'];
-        dd($movieCast);
+
+
+        dump($movie);
+        // dump($movieCast);
         return view('details', compact(['movie']));
     }
 
