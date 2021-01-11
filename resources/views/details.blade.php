@@ -19,7 +19,7 @@
                             fill="#ffc107" />
                     </svg>
                 </span>
-                <span class="ml-1">{{ $Movie['vote_average' ]* 10 . '%' }}</span>
+                <span class="ml-1">{{ $movie['vote_average' ]* 10 . '%' }}</span>
                 <span class="ml-1">|</span>
                 <span class="ml-1">Dec 20, 2020</span>
                 <span class="ml-1">|</span>
