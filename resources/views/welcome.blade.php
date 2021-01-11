@@ -7,13 +7,13 @@
 
             @foreach ($topRated as $tM)
             <div class="mt-8">
-                <a href="#">
+                <a href="{{ route('movie.show', $tM['id']) }}">
                     <img src="{{ "https://image.tmdb.org/t/p/w500/".$tM['poster_path'] }}"
                         alt="Move Poster"
                         class="hover:opacity-75 transition ease-in-out">
                 </a>
                 <div class="mt-2">
-                    <a href="#"
+                    <a href="{{ route('movie.show', $tM['id']) }}"
                         class="text-lg mt-2 hover:text-gray-300"> {{ $tM['title'] }} </a>
                     <div class="flex item-center text-gray-400 mt-1 text-sm">
                         <span class="ml-1 mt-0">
@@ -59,13 +59,13 @@
 
             @foreach ($upcomingMovies as $uM)
             <div class="mt-8">
-                <a href="#">
+                <a href="{{ route('movie.show', $uM['id']) }}">
                     <img src="{{ "https://image.tmdb.org/t/p/w500/".$uM['poster_path'] }}"
                         alt="Move Poster"
                         class="hover:opacity-75 transition ease-in-out">
                 </a>
                 <div class="mt-2">
-                    <a href="#"
+                    <a href="{{ route('movie.show', $uM['id']) }}"
                         class="text-lg mt-2 hover:text-gray-300"> {{ $uM['title'] }} </a>
                     <div class="flex item-center text-gray-400 mt-1 text-sm">
                         <span class="ml-1 mt-0">
@@ -111,13 +111,13 @@
 
             @foreach ($popularMovies as $pM)
             <div class="mt-8">
-                <a href="#">
+                <a href="{{ route('movie.show', $pM['id']) }}">
                     <img src="{{ "https://image.tmdb.org/t/p/w500/".$pM['poster_path'] }}"
                         alt="Move Poster"
                         class="hover:opacity-75 transition ease-in-out">
                 </a>
                 <div class="mt-2">
-                    <a href="#"
+                    <a href="{{ route('movie.show', $pM['id']) }}"
                         class="text-lg mt-2 hover:text-gray-300"> {{ $pM['title'] }} </a>
                     <div class="flex item-center text-gray-400 mt-1 text-sm">
                         <span class="ml-1 mt-0">
@@ -163,13 +163,13 @@
 
             @foreach ($NowPlaying as $Np)
             <div class="mt-8">
-                <a href="#">
+                <a href="{{ route('movie.show', $Np['id']) }}">
                     <img src="{{ "https://image.tmdb.org/t/p/w500/".$Np['poster_path'] }}"
                         alt="Move Poster"
                         class="hover:opacity-75 transition ease-in-out">
                 </a>
                 <div class="mt-2">
-                    <a href="#"
+                    <a href="{{ route('movie.show', $Np['id']) }}"
                         class="text-lg mt-2 hover:text-gray-300"> {{ $Np['title'] }} </a>
                     <div class="flex item-center text-gray-400 mt-1 text-sm">
                         <span class="ml-1 mt-0">
