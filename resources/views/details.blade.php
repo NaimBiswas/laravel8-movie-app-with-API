@@ -40,7 +40,7 @@
                 <div class="flex mt-4 ">
                     <div class="mt-4 mr-12">
                         <h5 class="">Production Companies</h5>
-                        <h5>Production Country</h5>
+                        <h5 class="mt-2">Production Country</h5>
                     </div>
                     <div class="mt-4">
                         <h5>
@@ -48,7 +48,7 @@
                             <span>{{ $companies['name'] }}@if (!$loop->last),@endif</span>
                             @endforeach
                         </h5>
-                        <h5>
+                        <h5 class="mt-2">
                             @foreach ( $movie['production_countries'] as $country)
                             <span>{{ $country['name'] }}@if (!$loop->last),@endif</span>
                             @endforeach
