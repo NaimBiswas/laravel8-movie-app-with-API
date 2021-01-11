@@ -6,7 +6,7 @@
             alt="Movie Poster"
             style="width: 24rem">
         <div class="ml-24">
-            <h2 class="text-4xl font-semibold text-gray-350">Wonder Woman 1984</h2>
+            <h2 class="text-4xl font-semibold text-gray-350">{{ $movie['title'] }}</h2>
 
             <div class="flex flex-wrap items-center text-gray-400 text-md mt-2">
                 <span class="ml-1 mt-1">
