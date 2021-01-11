@@ -21,7 +21,7 @@
                 </span>
                 <span class="ml-1">{{ $movie['vote_average' ]* 10 . '%' }}</span>
                 <span class="ml-1">|</span>
-                <span class="ml-1">{{ \Carbon\Carbon::parse($tM['release_date'])->format('M d, Y')  }}</span>
+                <span class="ml-1">{{ \Carbon\Carbon::parse($movie['release_date'])->format('M d, Y')  }}</span>
                 <span class="ml-1">|</span>
                 <div class="text-gray-300 ml-1">Fantasy, Action, Adventure</div>
             </div>
