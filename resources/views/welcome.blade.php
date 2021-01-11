@@ -57,16 +57,16 @@
         <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold popular-movie">Now Palying</h2>
         <div class="grid xs:grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12">
 
-            @foreach ($popularMovies as $pM)
+            @foreach ($NowPlaying as $Np)
             <div class="mt-8">
                 <a href="#">
-                    <img src="{{ "https://image.tmdb.org/t/p/w500/".$pM['poster_path'] }}"
+                    <img src="{{ "https://image.tmdb.org/t/p/w500/".$Np['poster_path'] }}"
                         alt="Move Poster"
                         class="hover:opacity-75 transition ease-in-out">
                 </a>
                 <div class="mt-2">
                     <a href="#"
-                        class="text-lg mt-2 hover:text-gray-300"> {{ $pM['title'] }} </a>
+                        class="text-lg mt-2 hover:text-gray-300"> {{ $Np['title'] }} </a>
                     <div class="flex item-center text-gray-400 mt-1 text-sm">
                         <span class="ml-1 mt-0">
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -78,11 +78,11 @@
                                     fill="#ffc107" />
                             </svg>
                         </span>
-                        <span class="ml-1">{{ $pM['vote_average' ]* 10 . '%' }}</span>
+                        <span class="ml-1">{{ $Np['vote_average' ]* 10 . '%' }}</span>
                         <span class="ml-1">|</span>
-                        <span class="ml-1">{{ \Carbon\Carbon::parse($pM['release_date'])->format('M d, Y')  }}</span>
+                        <span class="ml-1">{{ \Carbon\Carbon::parse($Np['release_date'])->format('M d, Y')  }}</span>
                     </div>
-                    @foreach ($pM['genre_ids'] as $gL)
+                    @foreach ($Np['genre_ids'] as $gL)
                     @foreach ($genreList as $GL)
 
                     @if ($gL === $GL['id'])
