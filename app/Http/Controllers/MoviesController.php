@@ -16,7 +16,7 @@ class MoviesController extends Controller
     {
         $topRated = Http::get('https://api.themoviedb.org/3/movie/top_rated?api_key=8a9121945fb215b83aac6b1896a8adfe')
             ->json()['results'];
-        $upcomingMovies = Http::get('https://api.themoviedb.org/3/movie/upcoming?api_key=8a9121945fb215b83aac6b1896a8adfe')
+        $upcomingMovies = Http::get('https://api.themoviedb.org/3/movie/upcoming?api_key=8a9121945fb215b83aac6b1896a8adfe&language=en-US&page=2')
             ->json()['results'];
 
         $popularMovies = Http::get('https://api.themoviedb.org/3/movie/popular?api_key=8a9121945fb215b83aac6b1896a8adfe')
