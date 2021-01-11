@@ -81,10 +81,9 @@
 
             <div class="grid xs:grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
 
-                @foreach ($movie['credits']['cast'] as $cast)
-
-
-                <div class="mt-8">
+                @foreach ($movie['credits']['cast'] as $cast)@if ($loop->index < 5)
+                    <div
+                    class="mt-8">
                     <a href="#">
                         <img src=" {{ "https://image.tmdb.org/t/p/w500/". $cast['profile_path'] }} "
                             alt="Move Poster"
@@ -97,13 +96,13 @@
                             {{ $cast['character'] }}
                         </div>
                     </div>
-                </div>
-
-                @endforeach
             </div>
-
-
+            @endif
+            @endforeach
         </div>
+
+
+    </div>
     </div>
 </section>
 <section class="border-b border-gray-800">
@@ -112,50 +111,21 @@
             <h2 class="text-4xl font-semibold">Images</h2>
 
             <div class="grid xs:grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
-                <div class="mt-8">
+
+                @foreach ($movie['images']['posters'] as $poster)@if (!$loop->index <5) <div
+                    class="mt-8">
                     <a href="#">
-                        <img src="{{ asset('img/images.jpg') }}"
+                        <img src="{{ "https://image.tmdb.org/t/p/w500/" }}"
                             alt="Move Poster"
                             class="hover:opacity-75 transition ease-in-out">
                     </a>
-                </div>
-                <div class="mt-8">
-                    <a href="#">
-                        <img src="{{ asset('img/images.jpg') }}"
-                            alt="Move Poster"
-                            class="hover:opacity-75 transition ease-in-out">
-                    </a>
-                </div>
-                <div class="mt-8">
-                    <a href="#">
-                        <img src="{{ asset('img/images.jpg') }}"
-                            alt="Move Poster"
-                            class="hover:opacity-75 transition ease-in-out">
-                    </a>
-                </div>
-                <div class="mt-8">
-                    <a href="#">
-                        <img src="{{ asset('img/images.jpg') }}"
-                            alt="Move Poster"
-                            class="hover:opacity-75 transition ease-in-out">
-                    </a>
-                </div>
-                <div class="mt-8">
-                    <a href="#">
-                        <img src="{{ asset('img/images.jpg') }}"
-                            alt="Move Poster"
-                            class="hover:opacity-75 transition ease-in-out">
-                    </a>
-                </div>
-                <div class="mt-8">
-                    <a href="#">
-                        <img src="{{ asset('img/images.jpg') }}"
-                            alt="Move Poster"
-                            class="hover:opacity-75 transition ease-in-out">
-                    </a>
-                </div>
             </div>
+            @endif
+            @endforeach
         </div>
+    </div>
+
+
     </div>
 </section>
 <style>
