@@ -24,7 +24,7 @@ class MoviesController extends Controller
             ->json()['results'];
 
 
-        return view('welcome', compact(['popularMovies', 'genreList', 'NowPlaying ']));
+        return view('welcome', compact(['popularMovies', 'genreList', 'NowPlaying']));
     }
 
     /**
