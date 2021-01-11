@@ -51,8 +51,10 @@
 
 
     </div>
+</div>
+<div class="container mx-auto px-4 pt-16 border-b border-gray-800">
     <div class="popular-movies mb-12 ">
-        <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold popular-movie">Now Playing</h2>
+        <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold popular-movie">Now Palying</h2>
         <div class="grid xs:grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12">
 
             @foreach ($popularMovies as $pM)
