@@ -62,8 +62,9 @@ class MoviesController extends Controller
     {
         $movie = Http::get('https://api.themoviedb.org/3/movie/' . $id . '?api_key=8a9121945fb215b83aac6b1896a8adfe')
             ->json();
-
-        return view('details', compact('movie'));
+        $genreList = Http::get('https://api.themoviedb.org/3/genre/movie/list?api_key=8a9121945fb215b83aac6b1896a8adfe')
+            ->json()['genres'];
+        return view('details', compact(['movie', 'genreList']));
     }
 
     /**
