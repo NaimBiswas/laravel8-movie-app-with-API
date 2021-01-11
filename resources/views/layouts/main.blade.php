@@ -19,7 +19,7 @@
                 <nav class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-6">
                     <ul class="flex flex-col md:flex-row items-center">
                         <li>
-                            <a href="#">
+                            <a href="{{ route('home') }}">
                                 <svg class="w-32"
                                     viewBox="0 0 96 24"
                                     fill="none">
