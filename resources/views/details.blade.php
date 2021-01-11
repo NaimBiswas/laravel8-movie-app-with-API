@@ -2,7 +2,7 @@
 @section('content')
 <section class="movie-info border-b border-gray-800">
     <div class="container mx-auto px-4 py-16 flex  sm:flex-none ">
-        <img src="{{ asset('img/images3.jpg') }}"
+        <img src="{{ "https://image.tmdb.org/t/p/w500/".$movie['poster_path'] }}"
             alt="Movie Poster"
             style="width: 24rem">
         <div class="ml-24">
