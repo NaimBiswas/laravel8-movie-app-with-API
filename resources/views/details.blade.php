@@ -119,11 +119,12 @@
 
             <div class="grid xs:grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
 
-                @foreach ($movie['images']['posters'] as $poster)@if ($loop->index < 9)
+                @foreach ($movie['images']['backdrops'] as $poster)
+                @if ($loop->index < 18)
                     <div
                     class="mt-8">
                     <a href="#">
-                        <img src="{{ "https://image.tmdb.org/t/p/w500/". $movie['poster_path'] }}"
+                        <img src="{{ "https://image.tmdb.org/t/p/w500/". $poster['file_path'] }}"
                             alt="Move Poster"
                             class="hover:opacity-75 transition ease-in-out">
                     </a>
