@@ -29,7 +29,8 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="md:ml-16 mt-3 md:mt-0 hover:text-gray-300"><a href="#">Movies</a></li>
+                        <li class="md:ml-16 mt-3 md:mt-0 hover:text-gray-300"><a href="{{ route('home') }}">Movies</a>
+                        </li>
                         <li class=" md:ml-16 mt-3 md:mt-0 hover:text-gray-300"><a href="#">TV Shows</a></li>
                         <li class="md:ml-16 mt-3 md:mt-0 hover:text-gray-300"><a href="#">Actors</a></li>
                     </ul>
