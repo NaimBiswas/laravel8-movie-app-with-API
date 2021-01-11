@@ -81,78 +81,25 @@
 
             <div class="grid xs:grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
 
+                @foreach ($movie['credits']['cast'] as $cast)
+
 
                 <div class="mt-8">
                     <a href="#">
-                        <img src="{{ asset('img/actor.jpg') }}"
+                        <img src=" {{ "https://image.tmdb.org/t/p/w500/". $cast['profile_path'] }} "
                             alt="Move Poster"
                             class="hover:opacity-75 transition ease-in-out">
                     </a>
                     <div class="mt-2">
                         <a href="https://movies.andredemos.ca/actors/90633"
-                            class="text-lg mt-2 hover:text-gray:300">Gal Gadot</a>
+                            class="text-lg mt-2 hover:text-gray:300">{{ $cast['original_name'] }}</a>
                         <div class="text-sm text-gray-400">
-                            Diana Prince / Wonder Woman
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-8">
-                    <a href="#">
-                        <img src="{{ asset('img/actor.jpg') }}"
-                            alt="Move Poster"
-                            class="hover:opacity-75 transition ease-in-out">
-                    </a>
-                    <div class="mt-2">
-                        <a href="https://movies.andredemos.ca/actors/90633"
-                            class="text-lg mt-2 hover:text-gray:300">Gal Gadot</a>
-                        <div class="text-sm text-gray-400">
-                            Diana Prince / Wonder Woman
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-8">
-                    <a href="#">
-                        <img src="{{ asset('img/actor.jpg') }}"
-                            alt="Move Poster"
-                            class="hover:opacity-75 transition ease-in-out">
-                    </a>
-                    <div class="mt-2">
-                        <a href="https://movies.andredemos.ca/actors/90633"
-                            class="text-lg mt-2 hover:text-gray:300">Gal Gadot</a>
-                        <div class="text-sm text-gray-400">
-                            Diana Prince / Wonder Woman
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-8">
-                    <a href="#">
-                        <img src="{{ asset('img/actor.jpg') }}"
-                            alt="Move Poster"
-                            class="hover:opacity-75 transition ease-in-out">
-                    </a>
-                    <div class="mt-2">
-                        <a href="https://movies.andredemos.ca/actors/90633"
-                            class="text-lg mt-2 hover:text-gray:300">Gal Gadot</a>
-                        <div class="text-sm text-gray-400">
-                            Diana Prince / Wonder Woman
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-8">
-                    <a href="#">
-                        <img src="{{ asset('img/actor.jpg') }}"
-                            alt="Move Poster"
-                            class="hover:opacity-75 transition ease-in-out">
-                    </a>
-                    <div class="mt-2">
-                        <a href="https://movies.andredemos.ca/actors/90633"
-                            class="text-lg mt-2 hover:text-gray:300">Gal Gadot</a>
-                        <div class="text-sm text-gray-400">
-                            Diana Prince / Wonder Woman
+                            {{ $cast['character'] }}
                         </div>
                     </div>
                 </div>
 
+                @endforeach
             </div>
 
 
