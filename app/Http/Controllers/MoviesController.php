@@ -14,6 +14,9 @@ class MoviesController extends Controller
      */
     public function index()
     {
+        $upcomingMovies = Http::get('https://api.themoviedb.org/3/movie/upcoming?api_key=8a9121945fb215b83aac6b1896a8adfe')
+            ->json()['results'];
+
         $popularMovies = Http::get('https://api.themoviedb.org/3/movie/popular?api_key=8a9121945fb215b83aac6b1896a8adfe')
             ->json()['results'];
 
@@ -24,7 +27,7 @@ class MoviesController extends Controller
             ->json()['results'];
 
 
-        return view('welcome', compact(['popularMovies', 'genreList', 'NowPlaying']));
+        return view('welcome', compact(['popularMovies', 'genreList', 'NowPlaying', 'upcomingMovies']));
     }
 
     /**
