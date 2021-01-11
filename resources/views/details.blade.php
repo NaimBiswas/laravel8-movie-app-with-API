@@ -25,13 +25,9 @@
                 <span class="ml-1">|</span>
                 <div class="text-gray-300 ml-1">Fantasy, Action, Adventure</div>
             </div>
-            <p class="mt-8 text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, iste
-                unde maxime
-                neque
-                eius in, hic
-                laboriosam omnis recusandae nihil perferendis culpa. Corrupti laborum illum, tempore fuga ut a numquam
-                veritatis facere illo ab. Asperiores dolore fugiat necessitatibus itaque veniam, mollitia illum ratione
-                fuga eum similique totam ut iusto omnis.</p>
+            <p class="mt-8 text-gray-300">
+                {{ $movie['overview'] }}
+            </p>
 
             <div class="mt-12">
                 <h4 class="text-white font-smibold">Featured Cast</h4>
