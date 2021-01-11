@@ -26,5 +26,5 @@ Route::get('details', function () {
     return view('details');
 })->name('details');
 
-Route::get('/', [MoviesController::class, 'index'])->name('movie');
+Route::get('/', [MoviesController::class, 'index'])->name('home');
 Route::get('/movie/{movie}', [MoviesController::class, 'show'])->name('movie.show');
