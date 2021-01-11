@@ -16,7 +16,9 @@
                 </a>
                 <div class="mt-2">
                     <a href="{{ route('movie.show', $tM['id']) }}"
-                        class="text-lg mt-2 hover:text-gray-300"> {{ $tM['title'] }} </a>
+                        class="text-lg mt-2 hover:text-gray-300">
+                        {{ Str::limit($tM['title'], 22) }}
+                    </a>
                     <div class="flex item-center text-gray-400 mt-1 text-sm">
                         <span class="ml-1 mt-0">
                             <svg xmlns="http://www.w3.org/2000/svg"
