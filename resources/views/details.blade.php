@@ -39,12 +39,20 @@
                 <h4 class="text-white font-smibold">Featured Cast</h4>
                 <div class="flex mt-4 ">
                     <div class="mt-4 mr-12">
-                        <h5 class="">Lucinda Syson</h5>
-                        <h5>Casting</h5>
+                        <h5 class="">Production Companies</h5>
+                        <h5>Production Country</h5>
                     </div>
                     <div class="mt-4">
-                        <h5>Hans Zimmer</h5>
-                        <h5>Original Music Compose</h5>
+                        <h5>
+                            @foreach ( $movie['production_companies'] as $companies)
+                            <span>{{ $companies['name'] }}@if (!$loop->last),@endif</span>
+                            @endforeach
+                        </h5>
+                        <h5>
+                            @foreach ( $movie['production_countries'] as $country)
+                            <span>{{ $country['name'] }}@if (!$loop->last),@endif</span>
+                            @endforeach
+                        </h5>
                     </div>
 
                 </div>
