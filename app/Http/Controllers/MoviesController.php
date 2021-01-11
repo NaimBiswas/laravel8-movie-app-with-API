@@ -60,8 +60,10 @@ class MoviesController extends Controller
      */
     public function show($id)
     {
+        $movie = Http::get('https://api.themoviedb.org/3/movie/' . $id . '?api_key=8a9121945fb215b83aac6b1896a8adfe')
+            ->json();
 
-        return view('details');
+        return view('details', compact('movie'));
     }
 
     /**
