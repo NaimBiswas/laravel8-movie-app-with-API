@@ -6,7 +6,9 @@
         <div class="grid xs:grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12">
 
             @foreach ($topRated as $tM)
-            <div class="mt-8">
+            @if ($loop->index <= 14)
+                <div
+                class="mt-8">
                 <a href="{{ route('movie.show', $tM['id']) }}">
                     <img src="{{ "https://image.tmdb.org/t/p/w500/".$tM['poster_path'] }}"
                         alt="Move Poster"
@@ -43,14 +45,15 @@
 
                     @endforeach
                 </div>
-            </div>
-            @endforeach
-
-
         </div>
+        @endif
+        @endforeach
 
 
     </div>
+
+
+</div>
 </div>
 <div class="container mx-auto px-4 pt-16 border-b border-gray-800">
     <div class="popular-movies mb-12 ">
