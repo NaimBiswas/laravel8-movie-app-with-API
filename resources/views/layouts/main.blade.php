@@ -8,6 +8,7 @@
         <meta http-equiv="X-UA-Compatible"
             content="ie=edge">
         <title>Laravel Movie App</title>
+        @livewireStyles
         <link rel="stylesheet"
             href="{{ mix('css/app.css') }}">
 
@@ -52,6 +53,8 @@
         <section>
             @yield('content')
         </section>
+        <script src="{{ mix('js/app.js') }}"></script>
+        @livewireScripts
     </body>
 
 </html>
