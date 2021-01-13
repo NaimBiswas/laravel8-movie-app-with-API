@@ -16,7 +16,12 @@
             <li class="border-b border-gray-700">
                 <a target="blank"
                     href="{{ route('movie.show',$results['id']) }}"
-                    class="block hover:bg-gray-700 px-3 py-2">{{ $results['title'] }}</a>
+                    class=" hover:bg-gray-700 px-3 py-2 flex items-center">
+                    <span><img class="w-8"
+                            src="{{ "https://image.tmdb.org/t/p/w92/".$results['poster_path'] }}"
+                            alt="Poster Images"></span>
+                    <span class="ml-4">{{ $results['title'] }}</span>
+                </a>
             </li>
             @endforeach
             @else
