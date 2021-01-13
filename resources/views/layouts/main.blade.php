@@ -35,11 +35,7 @@
                         <li class="md:ml-16 mt-3 md:mt-0 hover:text-gray-300"><a href="#">Actors</a></li>
                     </ul>
                     <ul class="flex flex-col md:flex-row items-center">
-
-
-
-
-
+                        <livewire:search-dropdown></livewire:search-dropdown>
                         <li class="mt-2">
                             <a href="">
                                 <img class="rounded-full ml-4"
