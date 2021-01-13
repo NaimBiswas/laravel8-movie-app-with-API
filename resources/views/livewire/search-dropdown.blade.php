@@ -6,8 +6,10 @@
             placeholder="Search...">
     </li>
     <div class="absolute bg-gray-800 rounded mt-2 w-64">
+        @if (strlen($search) >= 2)
+
         <ul>
-            @if ($searchResult && $searchResult->cout() > 0)
+            @if ($searchResult)
 
             @foreach ($searchResult as $results)
 
@@ -21,10 +23,11 @@
             <li class="border-b border-gray-700">
                 <a target="blank"
                     href="javascript:avoid('0')"
-                    class="block hover:bg-gray-700 px-3 py-2 text-red-600 text-center">NO RESULTS FOUND</a>
+                    class="block hover:bg-gray-700 px-3 py-2 text-red-600 text-center">NO RESULTS FOUND!</a>
             </li>
             @endif
 
         </ul>
+        @endif
     </div>
 </div>
