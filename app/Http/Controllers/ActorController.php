@@ -8,6 +8,7 @@ class ActorController extends Controller
 {
     public function index()
     {
+        return view('actores.index');
     }
     public function show($id)
     {
