@@ -11,6 +11,7 @@ class ActorController extends Controller
     {
         $popularActors = Http::get('https://api.themoviedb.org/3/person/popular?api_key=8a9121945fb215b83aac6b1896a8adfe')
             ->json()['results'];
+        dump($popularActors);
         return view('actores.index', compact('popularActors'));
     }
     public function show($id)
