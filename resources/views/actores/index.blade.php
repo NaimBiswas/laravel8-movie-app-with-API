@@ -8,7 +8,7 @@
             @foreach ($popularActors as $pA)
 
             <div class="mt-8">
-                <a href="{{ route('movie.show', $pA['id']) }}">
+                <a href="{{ route('actor.show', $pA['id']) }}">
                     <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $pA['profile_path'] }}"
                         alt="Move Poster"
                         class="hover:opacity-75 transition ease-in-out">
