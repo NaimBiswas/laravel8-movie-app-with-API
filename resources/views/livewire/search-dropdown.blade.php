@@ -3,7 +3,7 @@
     @click.away="isOpen = false">
     <li class=" mt-2">
         <input @keydown.escape.window="isOpen = false"
-            @keydown.shift.tap="isOpen = false"
+            @keydown.shift.tab="isOpen = false"
             @focus="isOpen = true"
             wire:model.debounce.500ms="search"
             type="text"
@@ -11,7 +11,7 @@
             placeholder="Search...">
     </li>
     @if (strlen($search) >= 2)
-    <div class="absolute bg-gray-800 rounded mt-2 w-64 "
+    <div class="absolute bg-gray-800 rounded mt-2 w-64 z-50"
         x-show="isOpen">
 
         <ul>
