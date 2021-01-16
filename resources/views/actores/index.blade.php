@@ -21,12 +21,7 @@
                         {{ Str::limit($pA['name'], 22) }}
                     </a>
                     <div class="text-sm truncate text-gray-400">
-                        <span>All Information here</span>
-                        <span>All Information here</span>
-                        <span>All Information here</span>
-                        <span>All Information here</span>
-                        <span>All Information here</span>
-                        <span>All Information here</span>
+                        <span>{{ $pA['known_for_department'] }}</span>
                     </div>
                 </div>
             </div>
