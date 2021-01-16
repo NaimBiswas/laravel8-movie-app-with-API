@@ -9,7 +9,8 @@
     </li>
     @if (strlen($search) >= 2)
     <div class="absolute bg-gray-800 rounded mt-2 w-64 "
-        x-show="isOpen">
+        x-show="isOpen"
+        @keydown.escape.window="isOpen = false">
 
         <ul>
             @if ($searchResult)
