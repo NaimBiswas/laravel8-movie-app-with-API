@@ -36,7 +36,8 @@
                         <li class="md:ml-16 mt-3 md:mt-0 hover:text-gray-300"><a href="{{ route('home') }}">Movies</a>
                         </li>
                         <li class=" md:ml-16 mt-3 md:mt-0 hover:text-gray-300"><a href="#">TV Shows</a></li>
-                        <li class="md:ml-16 mt-3 md:mt-0 hover:text-gray-300"><a href="#">Actors</a></li>
+                        <li class="md:ml-16 mt-3 md:mt-0 hover:text-gray-300"><a href="{{ route('actors') }}">Actors</a>
+                        </li>
                     </ul>
                     <ul class="flex flex-col md:flex-row items-center">
                         <livewire:search-dropdown></livewire:search-dropdown>
