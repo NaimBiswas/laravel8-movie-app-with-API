@@ -3,6 +3,7 @@
     @click.away="isOpen = false">
     <li class=" mt-2">
         <input @keydown.escape.window="isOpen = false"
+            @keydown.shift.tap="isOpen = false"
             @focus="isOpen = true"
             wire:model.debounce.500ms="search"
             type="text"
