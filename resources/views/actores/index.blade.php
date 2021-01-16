@@ -19,12 +19,14 @@
                         class="text-lg mt-2 hover:text-gray-300">
                         {{ Str::limit($tM['title'], 22) }}
                     </a>
-                    @foreach ($tM['genre_ids'] as $gL)
-                    @foreach ($genreList as $GL)
-                    @if ($gL === $GL['id'])
-                    <span class="text-gray-300">{{ $GL['name'] }},</span>
-                    @endif
-                    @endforeach
+                    <div class="text-sm truncate text-gray-400">
+                        <span>All Information here</span>
+                        <span>All Information here</span>
+                        <span>All Information here</span>
+                        <span>All Information here</span>
+                        <span>All Information here</span>
+                        <span>All Information here</span>
+                    </div>
 
 
                     @endforeach
