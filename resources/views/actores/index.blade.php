@@ -9,7 +9,9 @@
 
             <div class="mt-8">
                 <a href="{{ route('actor.show', $pA['id']) }}">
-                    <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $pA['profile_path'] }}"
+                    <img src="{{  $pA['profile_path']
+                     ? "https://image.tmdb.org/t/p/w500/".$pA['profile_path']
+                     : "https://ui-avatars.com/api/?size=500&name=". $pA['name'] }}"
                         alt="Move Poster"
                         class="hover:opacity-75 transition ease-in-out">
                 </a>
