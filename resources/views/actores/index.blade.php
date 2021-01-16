@@ -21,7 +21,12 @@
                         {{ Str::limit($pA['name'], 22) }}
                     </a>
                     <div class="text-sm truncate text-gray-400">
-                        <span>{{ $pA['known_for_department'] }}</span>
+                        <span>{{ $pA['known_for_department'] }}</span>,
+                        <span>{{ $pA['known_for'][0]['media_type'] }}</span>,
+                        <span>{{ $pA['known_for'][0]['overview'] }}</span>
+
+
+
                     </div>
                 </div>
             </div>
