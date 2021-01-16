@@ -2,15 +2,16 @@
     x-data="{ isOpen: true }"
     @click.away="isOpen = false">
     <li class=" mt-2">
-        <input wire:model.debounce.500ms="search"
+        <input @keydown.escape.window="isOpen = false"
+            @focus="isOpen = true"
+            wire:model.debounce.500ms="search"
             type="text"
             class="bg-gray-800 rounded-full w-64 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline"
             placeholder="Search...">
     </li>
     @if (strlen($search) >= 2)
     <div class="absolute bg-gray-800 rounded mt-2 w-64 "
-        x-show="isOpen"
-        @keydown.escape.window="isOpen = false">
+        x-show="isOpen">
 
         <ul>
             @if ($searchResult)
