@@ -15,7 +15,7 @@
                         class="hover:opacity-75 transition ease-in-out">
                 </a>
                 <div class="mt-2">
-                    <a href="{{ route('movie.show', $tM['id']) }}"
+                    <a href="{{ route('actor.show', $tM['id']) }}"
                         class="text-lg mt-2 hover:text-gray-300">
                         {{ Str::limit($tM['title'], 22) }}
                     </a>
