@@ -44,7 +44,9 @@
                         <li class="mt-2">
                             <a href="">
                                 <img class="rounded-full ml-4"
-                                    src="{{ asset('user/images/user.png') }}"
+                                    src="https://via.placeholder.com/300.png/09f/fff
+
+C/O https://placeholder.com/"
                                     alt="User Avatar">
                             </a>
                         </li>
