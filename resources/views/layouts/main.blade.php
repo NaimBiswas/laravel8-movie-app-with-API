@@ -60,6 +60,7 @@
 
         <script src="{{ mix('js/app.js') }}"></script>
         @livewireScripts
+        @yield('js')
     </body>
 
 </html>
