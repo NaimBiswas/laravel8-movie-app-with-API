@@ -6,7 +6,6 @@
         <div class="grid xs:grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
 
             @foreach ($popularActors as $pA)
-
             <div class="mt-8">
                 <a href="{{ route('actor.show', $pA['id']) }}">
                     <img src="{{  $pA['profile_path']
@@ -24,23 +23,12 @@
                         <span>{{ $pA['known_for_department'] }}</span>,
                         <span>{{ $pA['known_for'][0]['media_type'] }}</span>,
                         <span>{{ $pA['known_for'][0]['overview'] }}</span>
-
-
-
                     </div>
                 </div>
             </div>
-
             @endforeach
-
-
-
-
         </div>
-
-
     </div>
-
 
     <style>
         .popular-movie {
@@ -53,12 +41,6 @@
     <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
 
     <script>
-        let elem = document.querySelector('.grid');
-        let infScroll = new InfiniteScroll( elem, {
-        // options
-        path: '/actors/page=@{{#}}',
-        append: '.actor',
-        history: false,
-        });
+
     </script>
     @endsection
