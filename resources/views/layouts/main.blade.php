@@ -57,7 +57,13 @@
         <section>
             @yield('content')
         </section>
+        <footer class="container mx-auto">
+            <div class="flex justify-between px-10 py-10">
+                <span>Powered By <strong>Naim Biswas</strong></span>
+                <span>Reference By <strong>Andre Madarang</strong></span>
 
+            </div>
+        </footer>
         <script src="{{ mix('js/app.js') }}"></script>
         @livewireScripts
         @yield('js')
