@@ -30,7 +30,9 @@
                     </div>
                 </div>
             </div>
+
             @endforeach
+
 
 
 
@@ -38,6 +40,8 @@
 
 
     </div>
+
+
     <style>
         .popular-movie {
             color: #ed8936;
@@ -52,8 +56,8 @@
         let elem = document.querySelector('.grid');
         let infScroll = new InfiniteScroll( elem, {
         // options
-        path: '/actors/#',
-        append: '.pA',
+        path: '/actors/page=@{{#}}',
+        append: '.actor',
         history: false,
         });
     </script>

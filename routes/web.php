@@ -30,4 +30,5 @@ Route::get('details', function () {
 Route::get('/', [MoviesController::class, 'index'])->name('home');
 Route::get('/movie/{movie}', [MoviesController::class, 'show'])->name('movie.show');
 Route::get('/actors', [ActorController::class, 'index'])->name('actors');
+Route::get('/actors/page={page}', [ActorController::class, 'index'])->name('actors.page');
 Route::get('actor/{id}', [ActorController::class, 'show'])->name('actor.show');
