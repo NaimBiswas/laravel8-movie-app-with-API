@@ -49,11 +49,11 @@
     <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
 
     <script>
-        let elem = document.querySelector('.container');
+        let elem = document.querySelector('.grid');
         let infScroll = new InfiniteScroll( elem, {
         // options
-        path: '.pagination__next',
-        append: '.post',
+        path: '/actors/#',
+        append: '.pA',
         history: false,
         });
     </script>
