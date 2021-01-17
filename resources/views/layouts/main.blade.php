@@ -43,7 +43,7 @@
                         <livewire:search-dropdown></livewire:search-dropdown>
                         <li class="mt-2">
                             <a href="">
-                                <img class="rounded-full ml-4"
+                                <img class="rounded-full w-8 h-8 ml-4"
                                     src="https://via.placeholder.com/300.png/09f/fff
 
 C/O https://placeholder.com/"
