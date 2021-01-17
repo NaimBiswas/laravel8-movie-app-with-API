@@ -45,3 +45,6 @@
 
     </style>
     @endsection
+    @section('js')
+    <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
+    @endsection
